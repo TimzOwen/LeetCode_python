@@ -30,7 +30,8 @@ class Customer(models.Model):
     gender = models.CharField(max_length=100)
     email = models.EmailField()
     lat = models.IntegerField()
-    lng = models.IntegerField()
+    
+    lng = ???
 
     def clean(self):
         # Make sure both (lat, lng) are set or neither.
